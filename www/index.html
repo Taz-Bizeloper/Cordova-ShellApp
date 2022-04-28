@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';connect-src 'self' 
+    https://freenftmint.app; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="css/sweetalert.css" rel="stylesheet" />
+
+    <!--Needed for deep-linking android. replace with the -->
+    <link rel="alternate" href="android-app://com.mmwt.freenftmintapp/https/freenftmint.app" />
+    <link rel="alternate" href="android-app://com.mmwt.freenftmintapp/bizelop/freenftmint.app" />
+
+    <title>FREE NFT MINT APP</title>
+</head>
+
+<body>
+    <div class="app" id="app" hidden>
+        <div class="appBody">
+            <img src="images/icon.png" style="width: 75%;" />
+            <h2 style="text-align:center;" id="txtReady" hidden>Getting things ready</h2>
+            <h4 id="progress"></h4>
+            <div id="deviceready" class="blink">
+                <p class="event received"></p>
+            </div>
+        </div>
+        <div id="particles-js" style="position:absolute;"></div>
+    </div>
+    <div id="particles-js-Desktop"></div>
+    <script src="scripts/particles-js/particles.min.js"></script>
+    <script src="scripts/particles-js/particles.js"></script>
+    <script src="scripts/sweetalert.min.js"></script>
+    <script type="text/javascript" src="scripts/Jquery.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <!-- <script type="text/javascript" src="scripts/devIndex.js"></script> -->
+</body>
+
+</html>

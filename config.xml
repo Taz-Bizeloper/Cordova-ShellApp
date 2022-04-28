@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="10000000" defaultlocale="en-US" id="com.mmwt.freenftmintapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+    <name>Free NFT Mint App</name>
+    <description>
+        Mint your image for free as an NFT and use a profile picture or shrae with freinds and family.
+    </description>
+    <author email="info@Bizelop.app" href="https://Bizelop.app">
+      Bizelop
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <universal-links>
+        <host name="freenftmint.app" scheme="https" />
+        <host name="freenftmint.app" scheme="bizelop" />
+    </universal-links>
+    <platform name="android">
+     <preference name="hostname" value="app.freenftmint.app" />
+        <preference name="scheme" value="https" />
+
+        <preference name="AndroidXEnabled" value="true" />
+       
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
+            <activity android:launchMode="singleTask" />
+        </edit-config>
+        <config-file parent="/*" target="config.xml">
+            <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+            <preference name="GradlePluginGoogleServicesVersion" value="4.3.10" />
+        </config-file>
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <config-file parent="./application" target="AndroidManifest.xml">
+            <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
+        </config-file>
+        <allow-intent href="market:*" />
+      </platform>
+    <platform name="ios">
+    <preference name="hostname" value="app.freenftmint.app" />
+        <preference name="scheme" value="https" />
+
+        <resource-file src="GoogleService-Info.plist" target="GoogleService-Info.plist" />
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>Free NFT Mint App uses camera access for uploading photos.</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+            <string>Free NFT Mint App uses camera access for uploading photos.</string>
+        </edit-config>
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="ScrollEnabled" value="true" />
+      </platform>
+</widget>
