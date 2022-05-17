@@ -7,7 +7,7 @@
 <h4 align="center">Made With 🧡 By The <a href="https://Bizelop.app">Bizelop</a> Community </h4>
 <p align="center">
   <a href="https://discord.gg/bizelop"><img src="https://img.shields.io/badge/chat-discord?style=for-the-badge&logo=discord&label=discord&logoColor=7389D8&color=ff6501" /></a>
-  <a href="https://twitter.com/bizelop"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bizelop?color=ff6501&label=twitter&logo=twitter&style=for-the-badge"></a>
+  <a href="https://twitter.com/mmwirelesstech"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/mmwirelesstech?color=ff6501&label=twitter&logo=twitter&style=for-the-badge"></a>
   
 </p>
 
