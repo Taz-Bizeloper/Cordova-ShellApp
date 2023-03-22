@@ -4,9 +4,8 @@
 
 <h3 align="center">A Cordova shell App to wrap your Web App into a Native Mobile App</h3>
 
-<h4 align="center">Made With 🧡 By The <a href="https://Bizelop.app">Bizelop</a> Community </h4>
+<h4 align="center">Made With 🧡 By  <a href="https://mmWirelessTech.com">M&M Wireless Tech</a>  </h4>
 <p align="center">
-  <a href="https://discord.gg/bizelop"><img src="https://img.shields.io/badge/chat-discord?style=for-the-badge&logo=discord&label=discord&logoColor=7389D8&color=ff6501" /></a>
   <a href="https://twitter.com/mmwirelesstech"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/mmwirelesstech?color=ff6501&label=twitter&logo=twitter&style=for-the-badge"></a>
   
 </p>
@@ -87,7 +86,8 @@ cd Cordova-ShellApp
 - Update the config.xml file with your App information: name, description, The "id" property on the widget tag, The universal links host names and scheme, the host and scheme names under both android and iOS tags
 - The shell App contains Google Firebase push notifications plugin. You will need to create a [Firebase application](https://firebase.google.com) and download the Google-Services.json (For Android) and the GoogleServices-Info.plist (For iOS) then put the two files in the root directory (next to config.xml) before adding platforms
 - If you are not looking to use this plugin you can remove the reference from the package.json and config.xml or you will see an error about missing Google Services files.
-- If you are not familiar with setting up firebase join the [Discord](https://discord.gg/bizelop)
+- If you are not familiar with setting up firebase contact us on [Twitter](https://twitter.com/mmwirelesstech) or email us at [mj@mmWirelessTech.com](mailto:mj@mmWirelessTech.com) we will be happy to help!
+
 
 In the resources folder there are two images icon.png and splash.png that you can update. 
 
@@ -128,7 +128,7 @@ For the devIndex.js this is for testing and developing. This will prompt you to 
 
 You can point to your local machine using IP address or to a testing domain site where you can put your www.zip.  Example: 
 - http://192.168.1.8/myApp 
-- https://test.mydomaing.com
+- https://test.mydomain.com
 
 To switch between the index.js and the devIndex.js update the index.html to point to the one you want to run with and comment out the other file
 
@@ -271,7 +271,7 @@ loadCordova = async () => {
 
 If you are not familiar with [Cordova](https://cordova.apache.org/) we suggest for you to look at their website for help. They have many [examples and plugins that you can use](https://cordova.apache.org/plugins/) 
 
-If you get stuck or run into any errors please join the [Discord](https://discord.gg/bizelop) for assistance
+If you get stuck or run into any errors contact us on [Twitter](https://twitter.com/mmwirelesstech) or email us at [mj@mmWirelessTech.com](mailto:mj@mmWirelessTech.com)
 
 
 # License

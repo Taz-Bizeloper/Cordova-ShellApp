@@ -201,7 +201,7 @@ var appDir = "";
                         deleteLocalAndGetLatest(); // this will call and install new www folder
                     }
                 }
-            }).error(function (ex) {
+            }).fail(function (ex) {
                 console.log(ex);
                 tryLoadAppOffline();
             });
@@ -307,7 +307,7 @@ var appDir = "";
 
                 console.log(entry.toURL());
                 // Path to the file
-                var ZipPath = entry.toURL();
+                var ZipPath = entry.nativeURL;
                 // Path of the destination folder
                 var ZipExtractDirectory = appDir;
 

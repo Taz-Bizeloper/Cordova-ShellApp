@@ -4,8 +4,8 @@
     <description>
         Mint your image for free as an NFT and use a profile picture or shrae with freinds and family.
     </description>
-    <author email="info@Bizelop.app" href="https://Bizelop.app">
-      Bizelop
+    <author email="mj@mmWirelessTech.com" href="https://mmwirlesstech.com">
+      MM Wireless Tech
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -42,7 +42,11 @@
             <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
         </config-file>
         <allow-intent href="market:*" />
-      </platform>
+
+		<preference name="AndroidWindowSplashScreenBackground" value="#FFFFFF" />
+		<preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/splash/drawable-land-xhdpi-screen.png" />
+
+	</platform>
     <platform name="ios">
     <preference name="hostname" value="app.freenftmint.app" />
         <preference name="scheme" value="https" />
